@@ -5,6 +5,7 @@ from astrbot.api.star import Context, Star
 from astrbot.api import logger
 from astrbot.core.computer.computer_client import get_booter, get_local_booter
 
+@register("astrbot_plugin_subagent_shell", "Rikkawaii", "subagent shell", "1.0.0")
 class SubagentShellPlugin(Star):
     """
     提供给 Subagent 专属的 Shell 执行工具，支持自动识别沙箱/本地环境
@@ -39,7 +40,6 @@ class SubagentShellPlugin(Star):
                     self.context,
                     event.unified_msg_origin,
                 )
-                logger.info(f"获取沙箱执行器成功: {sb}")
             
             # 3. 执行并返回结果
             result = await sb.shell.exec(command, background=background)
