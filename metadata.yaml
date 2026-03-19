@@ -1,6 +1,6 @@
 name: astrbot_plugin_subagent_shell
 display_name: astrbot_plugin_subagent_shell
-desc: astrbot插件，给子代理提供独立的 shell 执行工具，用于绕过白名单面板上无法勾选自带 shell 的限制。
+desc: 给subagent提供独立的 shell 执行工具，用于绕过白名单面板上无法勾选自带 shell 的限制
 help: 启用该插件后，在子代理的“指定工具”中勾选“subagent_execute_shell”即可。
 version: v1.0.0
 author: Rikkawaii
